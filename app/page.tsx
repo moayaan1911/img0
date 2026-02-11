@@ -75,7 +75,7 @@ export default function Home() {
             <div className="mb-3 flex items-center justify-between">
               <h2 className="text-lg font-semibold">Tool Discovery Preview</h2>
               <span className="rounded-full border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-secondary)]">
-                Non-functional for now
+                Live + upcoming tools
               </span>
             </div>
             <SearchBar id="landing-tools-search" />
@@ -84,10 +84,10 @@ export default function Home() {
           <section id="tools-preview" className="space-y-4">
             <div className="flex items-end justify-between">
               <h2 className="text-2xl font-semibold tracking-tight">
-                Upcoming Tools
+                Tool Spotlight
               </h2>
               <p className="text-sm text-[var(--text-secondary)]">
-                Every card is disabled intentionally
+                Phase 1 tools are now available
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

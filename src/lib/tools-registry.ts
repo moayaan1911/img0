@@ -1,4 +1,4 @@
-export type ToolStatus = "coming-soon";
+export type ToolStatus = "coming-soon" | "live";
 
 export type ToolCategory =
   | "Core Image"
@@ -249,9 +249,17 @@ const toolSeeds: ToolSeed[] = [
   },
 ];
 
+const LIVE_TOOL_SLUGS = new Set([
+  "compress",
+  "resize",
+  "crop",
+  "convert",
+  "flip-rotate",
+]);
+
 export const TOOLS_REGISTRY: ToolDefinition[] = toolSeeds.map((tool) => ({
   ...tool,
-  status: "coming-soon",
+  status: LIVE_TOOL_SLUGS.has(tool.slug) ? "live" : "coming-soon",
   route: `/tools/${tool.slug}`,
 }));
 
@@ -277,4 +285,3 @@ export const FEATURED_TOOLS = TOOLS_REGISTRY.filter((tool) =>
 export function getToolBySlug(slug: string): ToolDefinition | undefined {
   return TOOLS_REGISTRY.find((tool) => tool.slug === slug);
 }
-

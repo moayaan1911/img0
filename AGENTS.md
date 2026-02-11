@@ -111,7 +111,7 @@ Always suggest the exact commands you want to run and **WAIT for my green signal
 | **Icons**            | Lucide React                     | Clean, consistent iconography                                                |
 | **Animations**       | Framer Motion                    | Subtle, smooth animations — don't overdo it                                  |
 | **Hosting**          | Vercel / Cloudflare Pages        | Free tier, edge deployment                                                   |
-| **Package Manager**  | pnpm                             | Fast, disk-efficient                                                         |
+| **Package Manager**  | npm                              | Stable and widely supported                                                  |
 
 ### Important Tech Notes:
 
@@ -310,7 +310,7 @@ img0.xyz/
 ├── tailwind.config.ts
 ├── tsconfig.json
 ├── package.json
-├── pnpm-lock.yaml
+├── package-lock.json
 ├── .gitignore
 ├── .eslintrc.json
 ├── AGENTS.md                      # This file — you are here 📍
@@ -325,26 +325,15 @@ img0.xyz/
 
 ### Phase 0: Foundation 🏗️
 
-> Get the base setup right before building any tools.
+> Phase 0 foundation setup is complete.
 
-- [ ] Initialize Next.js 16+ project with TypeScript + pnpm
-- [ ] Configure Tailwind CSS 4 + shadcn/ui
-- [ ] Set up static export (`output: 'export'` in next.config)
-- [ ] Implement layout: Navbar + Footer + Theme Toggle (light/dark)
-- [ ] Create homepage with tool grid (empty cards for upcoming tools)
-- [ ] Build reusable `ImageUploader` component (drag & drop + click)
-- [ ] Build reusable `DownloadButton` component
-- [ ] Build reusable `ImagePreview` component
-- [ ] Build `ProcessingLoader` component
-- [ ] Set up `tools-registry.ts` — central config for all tools
-- [ ] Add SEO: meta tags, OpenGraph, proper `<title>` per page
-- [ ] Add responsive design — test on mobile
-- [ ] Set up `next-themes` for dark/light mode with system default
-- [ ] Deploy initial version to Vercel/Cloudflare
+- [x] Phase 0 completed and approved
 
 ### Phase 1: Core Image Tools 🖼️
 
-> The bread and butter. Most commonly needed tools.
+> Phase 1 core image tools are complete.
+
+- [x] Phase 1 completed and approved
 
 1. **Image Compressor / Optimizer**
    - Compress images while maintaining quality
@@ -711,8 +700,8 @@ const nextConfig = {
 
 | Phase     | Focus              | Tools Count        |
 | --------- | ------------------ | ------------------ |
-| Phase 0   | Foundation & Setup | 0 (infrastructure) |
-| Phase 1   | Core Image Tools   | 5 tools            |
+| Phase 0   | Foundation & Setup | Completed ✅        |
+| Phase 1   | Core Image Tools   | Completed ✅        |
 | Phase 2   | Background & Color | 4 tools            |
 | Phase 3   | Text & Overlay     | 3 tools            |
 | Phase 4   | PDF & Document     | 3 tools            |

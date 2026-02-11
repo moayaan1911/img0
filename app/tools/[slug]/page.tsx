@@ -15,7 +15,9 @@ type ToolPageProps = {
 };
 
 export async function generateStaticParams() {
-  return TOOLS_REGISTRY.map((tool) => ({ slug: tool.slug }));
+  return TOOLS_REGISTRY.filter((tool) => tool.status !== "live").map((tool) => ({
+    slug: tool.slug,
+  }));
 }
 
 export const dynamicParams = false;

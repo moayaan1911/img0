@@ -6,9 +6,9 @@ import ToolCard from "@/src/components/shared/ToolCard";
 import { TOOLS_REGISTRY } from "@/src/lib/tools-registry";
 
 export const metadata: Metadata = {
-  title: "All Tools (Coming Soon)",
+  title: "All Tools",
   description:
-    "Preview every planned image tool route on img0.xyz. Tool implementations are intentionally disabled right now.",
+    "Browse live and upcoming image tools on img0.xyz.",
 };
 
 export default function ToolsIndexPage() {
@@ -20,14 +20,14 @@ export default function ToolsIndexPage() {
         <main className="flex flex-col gap-8">
           <section className="rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-10">
             <p className="inline-flex w-fit items-center rounded-full border border-[var(--border)] bg-[var(--background)] px-3 py-1 text-xs font-medium text-[var(--text-secondary)]">
-              Route Preview • Coming Soon
+              Live + Upcoming Tool Routes
             </p>
             <h1 className="mt-4 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
               All planned tools, one clean registry.
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-7 text-[var(--text-secondary)] sm:text-lg">
-              Every route is wired for preview and architecture validation. Real
-              image processing will be added tool-by-tool after approval.
+              Phase 1 core tools are now live, and remaining tools stay in
+              placeholder mode until their implementation phase.
             </p>
             <Link
               href="/"
@@ -43,7 +43,7 @@ export default function ToolsIndexPage() {
                 Tools Registry Preview
               </h2>
               <p className="text-sm text-[var(--text-secondary)]">
-                {TOOLS_REGISTRY.length} routes • all disabled
+                {TOOLS_REGISTRY.length} routes • live + planned
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -59,4 +59,3 @@ export default function ToolsIndexPage() {
     </div>
   );
 }
-
