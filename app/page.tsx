@@ -9,7 +9,7 @@ import { FEATURED_TOOLS, TOOLS_REGISTRY } from "@/src/lib/tools-registry";
 export const metadata: Metadata = {
   title: "Free Image Toolkit Landing",
   description:
-    "Use img0.xyz free client-side image studio. Phase 1, Phase 2, and Phase 3 tools are now live.",
+    "Use img0.xyz free client-side image studio. All planned Phase 1 to Phase 8 tools are now live.",
 };
 
 export default function Home() {
@@ -87,7 +87,7 @@ export default function Home() {
                 Tool Spotlight
               </h2>
               <p className="text-sm text-[var(--text-secondary)]">
-                Phase 1, 2, and 3 tools are now available
+                All phases (1 to 8) are now available
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

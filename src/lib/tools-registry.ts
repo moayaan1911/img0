@@ -262,6 +262,26 @@ const LIVE_TOOL_SLUGS = new Set([
   "meme-generator",
   "watermark",
   "screenshot-beautifier",
+  "img-to-pdf",
+  "pdf-to-img",
+  "ocr",
+  "exif-viewer",
+  "base64",
+  "round-corners",
+  "blur-censor",
+  "favicon-generator",
+  "social-resize",
+  "passport-photo",
+  "collage",
+  "gif-maker",
+  "ascii-art",
+  "pixel-art",
+  "compare",
+  "upscale",
+  "colorize",
+  "object-eraser",
+  "batch-resize",
+  "sprite-sheet",
 ]);
 
 export const TOOLS_REGISTRY: ToolDefinition[] = toolSeeds.map((tool) => ({
@@ -287,6 +307,7 @@ export const FEATURED_TOOL_SLUGS = [
   "passport-photo",
   "gif-maker",
   "batch-resize",
+  "sprite-sheet",
 ];
 
 export const FEATURED_TOOLS = TOOLS_REGISTRY.filter((tool) =>
