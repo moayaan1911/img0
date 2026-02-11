@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SearchBar from "@/src/components/shared/SearchBar";
+import ThemeToggle from "@/src/components/layout/ThemeToggle";
 
 type NavbarProps = {
   totalTools: number;
@@ -30,12 +31,12 @@ export default function Navbar({ totalTools }: NavbarProps) {
           <span className="rounded-full border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-secondary)]">
             {totalTools} tools planned
           </span>
-          <span className="rounded-full border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-secondary)]">
+          <span className="hidden rounded-full border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-secondary)] sm:inline-flex">
             100% client-side
           </span>
+          <ThemeToggle />
         </div>
       </div>
     </header>
   );
 }
-

@@ -26,19 +26,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #09090b;
-    --surface: #18181b;
-    --surface-strong: #27272a;
-    --border: #3f3f46;
-    --text-primary: #fafafa;
-    --text-secondary: #a1a1aa;
-    --brand: #fafafa;
-    --brand-contrast: #09090b;
-    --glow-a: rgba(59, 130, 246, 0.22);
-    --glow-b: rgba(16, 185, 129, 0.16);
-  }
+:root.dark {
+  --background: #09090b;
+  --surface: #18181b;
+  --surface-strong: #27272a;
+  --border: #3f3f46;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --brand: #fafafa;
+  --brand-contrast: #09090b;
+  --glow-a: rgba(59, 130, 246, 0.22);
+  --glow-b: rgba(16, 185, 129, 0.16);
 }
 
 body {
@@ -49,6 +47,10 @@ body {
   color: var(--text-primary);
   font-family: var(--font-geist-sans), "Inter", sans-serif;
   min-height: 100vh;
+  transition:
+    background-color 220ms ease,
+    color 220ms ease,
+    background-image 220ms ease;
 }
 
 ::selection {
