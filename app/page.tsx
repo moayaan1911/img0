@@ -87,7 +87,7 @@ export default function Home() {
                 Tool Spotlight
               </h2>
               <p className="text-sm text-[var(--text-secondary)]">
-                Phase 1 tools are now available
+                Phase 1 and Phase 2 tools are now available
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

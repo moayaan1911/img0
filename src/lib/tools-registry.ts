@@ -255,6 +255,10 @@ const LIVE_TOOL_SLUGS = new Set([
   "crop",
   "convert",
   "flip-rotate",
+  "bg-remove",
+  "bg-color",
+  "filters",
+  "color-picker",
 ]);
 
 export const TOOLS_REGISTRY: ToolDefinition[] = toolSeeds.map((tool) => ({
@@ -268,6 +272,9 @@ export const FEATURED_TOOL_SLUGS = [
   "resize",
   "convert",
   "bg-remove",
+  "bg-color",
+  "filters",
+  "color-picker",
   "meme-generator",
   "img-to-pdf",
   "ocr",
