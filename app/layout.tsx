@@ -82,13 +82,16 @@ export const metadata: Metadata = {
     description:
       "Edit images directly in your browser with zero upload and zero signup.",
     images: [OG_IMAGE_URL],
-    site: "@img0_xyz",
   },
   other: {
     "geo.region": "GLOBAL",
     "geo.placename": "Worldwide",
     "geo.position": "0;0",
     ICBM: "0, 0",
+    "og:image:url": OG_IMAGE_URL,
+    "og:image:secure_url": OG_IMAGE_URL,
+    "twitter:image:src": OG_IMAGE_URL,
+    "twitter:image:alt": "img0.xyz website preview",
   },
 };
 
