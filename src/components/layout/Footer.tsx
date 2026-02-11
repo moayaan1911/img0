@@ -6,6 +6,7 @@ export default function Footer() {
       <p>
         © {year} img0.xyz • Minimalist Image Studio in your browser
       </p>
+      <p className="mt-1">Completely Vibe Coded with Codex</p>
     </footer>
   );
 }

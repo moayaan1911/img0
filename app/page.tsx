@@ -7,7 +7,7 @@ import ToolCard from "@/src/components/shared/ToolCard";
 import { FEATURED_TOOLS, TOOLS_REGISTRY } from "@/src/lib/tools-registry";
 
 export const metadata: Metadata = {
-  title: "img0.xyz — Minimalist Image Studio",
+  title: "img0.xyz - Minimalist Image Studio",
   description:
     "Minimalist Image Studio in your browser. Edit, optimize, and export images with zero signup.",
 };
@@ -35,14 +35,12 @@ export default function Home() {
                 <div className="flex flex-wrap items-center gap-3">
                   <a
                     href="#tools-preview"
-                    className="rounded-xl bg-[var(--text-primary)] px-4 py-2.5 text-sm font-medium text-[var(--background)] transition hover:opacity-90"
-                  >
+                    className="rounded-xl bg-[var(--text-primary)] px-4 py-2.5 text-sm font-medium text-[var(--background)] transition hover:opacity-90">
                     Explore Tools
                   </a>
                   <Link
                     href="/tools"
-                    className="rounded-xl border border-[var(--border)] px-4 py-2.5 text-sm font-medium text-[var(--text-secondary)] transition hover:bg-[var(--surface-strong)]"
-                  >
+                    className="rounded-xl border border-[var(--border)] px-4 py-2.5 text-sm font-medium text-[var(--text-secondary)] transition hover:bg-[var(--surface-strong)]">
                     Browse All Tools
                   </Link>
                 </div>
@@ -52,7 +50,9 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="tools-preview" className="space-y-4">
+          <section
+            id="tools-preview"
+            className="space-y-4">
             <div className="flex items-end">
               <h2 className="text-2xl font-semibold tracking-tight">
                 Tool Spotlight
@@ -60,11 +60,13 @@ export default function Home() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {FEATURED_TOOLS.map((tool) => (
-                <ToolCard key={tool.slug} tool={tool} />
+                <ToolCard
+                  key={tool.slug}
+                  tool={tool}
+                />
               ))}
             </div>
           </section>
-
         </main>
 
         <Footer />
