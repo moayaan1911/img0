@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_URL = "https://img0.xyz";
-const OG_IMAGE_PATH = "/Screenshot.png";
+const OG_IMAGE_URL = `${SITE_URL}/og-image.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -68,9 +68,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: OG_IMAGE_PATH,
-        width: 2880,
-        height: 1724,
+        url: OG_IMAGE_URL,
+        width: 1200,
+        height: 630,
+        type: "image/png",
         alt: "img0.xyz website preview",
       },
     ],
@@ -80,7 +81,8 @@ export const metadata: Metadata = {
     title: "img0.xyz - Minimalist Image Studio",
     description:
       "Edit images directly in your browser with zero upload and zero signup.",
-    images: [OG_IMAGE_PATH],
+    images: [OG_IMAGE_URL],
+    site: "@img0_xyz",
   },
   other: {
     "geo.region": "GLOBAL",
@@ -103,7 +105,7 @@ export default function RootLayout({
         name: "img0.xyz",
         url: SITE_URL,
         inLanguage: "en",
-        image: `${SITE_URL}${OG_IMAGE_PATH}`,
+        image: OG_IMAGE_URL,
         description: "Minimalist Image Studio in your browser.",
       },
       {
@@ -118,7 +120,7 @@ export default function RootLayout({
           priceCurrency: "USD",
         },
         url: SITE_URL,
-        image: `${SITE_URL}${OG_IMAGE_PATH}`,
+        image: OG_IMAGE_URL,
         description:
           "Privacy-first image toolkit for compression, conversion, editing, and export.",
       },
