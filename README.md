@@ -1,36 +1,174 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# img0.xyz
 
-## Getting Started
+Minimalist Image Studio in your browser.
 
-First, run the development server:
+img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based workflows. The project is non-profit, open-source, and community-driven.
+
+## Core Principles
+
+- No paid APIs
+- No user accounts
+- No user image upload to third-party servers
+- Keep tools simple, fast, and practical
+- Open collaboration with contributors
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript (strict)
+- Tailwind CSS
+- next-themes
+- Client-side processing libraries (JS/WASM based)
+
+## Current Status
+
+- Phases shipped: 0 to 8
+- Tools shipped: 33
+- Tool categories: 8
+
+## Tool Categories
+
+### Core Image
+
+- Image Compressor
+- Image Resizer
+- Image Cropper
+- Format Converter
+- Flip & Rotate
+
+### Background & Color
+
+- Background Remover
+- Background Color Changer
+- Image Filters
+- Color Picker
+
+### Text & Overlay
+
+- Meme Generator
+- Text & Watermark
+- Screenshot Beautifier
+
+### PDF & Document
+
+- Image to PDF
+- PDF to Image
+- OCR Text Extractor
+
+### Utility
+
+- EXIF Viewer & Remover
+- Image ↔ Base64
+- Round Corners
+- Circular Image Crop
+- Blur / Censor Tool
+- Favicon Generator
+- Social Media Resizer
+- Passport Photo Cropper
+
+### Creative
+
+- Collage Maker
+- GIF Maker
+- ASCII Art Converter
+- Pixel Art Converter
+- Before/After Compare
+
+### AI
+
+- AI Image Upscaler
+- AI Colorize B&W
+- AI Object Eraser
+
+### Batch & Power
+
+- Batch Image Processor
+- Sprite Sheet Generator
+
+## Project Structure
+
+```text
+app/
+  page.tsx
+  tools/
+    page.tsx
+    [slug]/page.tsx
+    ...tool routes
+src/
+  components/
+    layout/
+    shared/
+    tools/
+  lib/
+    image-utils.ts
+    tools-registry.ts
+```
+
+## Local Setup
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run lint:
+
+```bash
+npm run lint
+```
+
+3. Build production bundle:
+
+```bash
+npm run build
+```
+
+4. (Optional) Run locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` - start development server
+- `npm run lint` - run ESLint
+- `npm run build` - create production build
+- `npm run start` - run production server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+This project is designed to grow through community contributions.
 
-To learn more about Next.js, take a look at the following resources:
+Please read:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [`CONTRIBUTION.md`](./CONTRIBUTION.md) for the full contribution workflow
+- Existing tool pages and `src/lib/tools-registry.ts` before adding new tools
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+If you use the app and want to help, pick one:
 
-## Deploy on Vercel
+- Add a new tool
+- Improve performance/accessibility
+- Fix edge-case bugs
+- Improve docs and onboarding
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribution-Friendly Areas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- New image utilities (browser-only)
+- Better UX states (error/progress/empty)
+- Accessibility improvements
+- Mobile responsiveness improvements
+- Metadata/SEO improvements
+
+## Non-Negotiables
+
+- Keep the project free and open-source
+- Keep processing client-side where feasible
+- Do not introduce paid dependencies
+- Do not introduce auth/account systems
+- Do not introduce tracking-heavy analytics
+
+## License
+
+No explicit license file is present yet. Add a license before wider public distribution.

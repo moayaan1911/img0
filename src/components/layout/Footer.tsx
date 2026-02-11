@@ -1,11 +1,11 @@
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="border-t border-[var(--border)] pt-6 text-sm text-[var(--text-secondary)]">
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <p>img0.xyz • Ultimate Free Client-Side Image Toolkit</p>
-        <p>Made for builders who care about speed and privacy.</p>
-      </div>
+    <footer className="border-t border-[var(--border)] pt-6 text-center text-sm text-[var(--text-secondary)]">
+      <p>
+        © {year} img0.xyz • Minimalist Image Studio in your browser
+      </p>
     </footer>
   );
 }
-

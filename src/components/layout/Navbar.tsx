@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import SearchBar from "@/src/components/shared/SearchBar";
 import ThemeToggle from "@/src/components/layout/ThemeToggle";
 
@@ -25,14 +26,27 @@ export default function Navbar({ totalTools }: NavbarProps) {
           </div>
         </div>
 
-        <SearchBar className="hidden lg:block" />
+        <Suspense
+          fallback={
+            <div className="hidden rounded-xl border border-[var(--border)] bg-[var(--background)] px-4 py-3 lg:block">
+              <p className="text-sm text-[var(--text-secondary)]">Search all tools...</p>
+            </div>
+          }
+        >
+          <SearchBar
+            className="hidden lg:block"
+            placeholder="Search all tools..."
+            targetPath="/tools"
+          />
+        </Suspense>
+
 
         <div className="flex items-center justify-end gap-2">
           <span className="rounded-full border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-secondary)]">
-            {totalTools} tools planned
+            {totalTools} tools live
           </span>
           <span className="hidden rounded-full border border-[var(--border)] px-3 py-1 text-xs text-[var(--text-secondary)] sm:inline-flex">
-            100% client-side
+            Privacy first
           </span>
           <ThemeToggle />
         </div>
