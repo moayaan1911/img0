@@ -9,7 +9,7 @@ import { FEATURED_TOOLS, TOOLS_REGISTRY } from "@/src/lib/tools-registry";
 export const metadata: Metadata = {
   title: "Free Image Toolkit Landing",
   description:
-    "Preview the upcoming img0.xyz client-side image studio. Tools are listed in coming-soon mode for UI review.",
+    "Use img0.xyz free client-side image studio. Phase 1, Phase 2, and Phase 3 tools are now live.",
 };
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
     ["Backend", "0"],
     ["Signups", "0"],
     ["Payments", "0"],
-    ["Image Upload", "No"],
+    ["Image Upload", "Yes"],
     ["Privacy Score", "A+"],
   ];
 
@@ -32,7 +32,7 @@ export default function Home() {
             <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl space-y-5">
                 <p className="inline-flex w-fit items-center rounded-full border border-[var(--border)] bg-[var(--background)] px-3 py-1 text-xs font-medium text-[var(--text-secondary)]">
-                  Launch Preview • Landing UI Only
+                  Live Build • Client-side Only
                 </p>
                 <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
                   Free image toolkit built for speed, privacy, and clean output.
@@ -87,7 +87,7 @@ export default function Home() {
                 Tool Spotlight
               </h2>
               <p className="text-sm text-[var(--text-secondary)]">
-                Phase 1 and Phase 2 tools are now available
+                Phase 1, 2, and 3 tools are now available
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

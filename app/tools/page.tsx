@@ -8,7 +8,7 @@ import { TOOLS_REGISTRY } from "@/src/lib/tools-registry";
 export const metadata: Metadata = {
   title: "All Tools",
   description:
-    "Browse live and upcoming image tools on img0.xyz.",
+    "Browse live and upcoming client-side image tools on img0.xyz.",
 };
 
 export default function ToolsIndexPage() {
@@ -26,7 +26,7 @@ export default function ToolsIndexPage() {
               All planned tools, one clean registry.
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-7 text-[var(--text-secondary)] sm:text-lg">
-              Phase 1 and Phase 2 tools are now live, and remaining tools stay in
+              Phase 1, Phase 2, and Phase 3 tools are now live, and remaining tools stay in
               placeholder mode until their implementation phase.
             </p>
             <Link

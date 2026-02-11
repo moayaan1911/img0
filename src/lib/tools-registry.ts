@@ -259,6 +259,9 @@ const LIVE_TOOL_SLUGS = new Set([
   "bg-color",
   "filters",
   "color-picker",
+  "meme-generator",
+  "watermark",
+  "screenshot-beautifier",
 ]);
 
 export const TOOLS_REGISTRY: ToolDefinition[] = toolSeeds.map((tool) => ({
@@ -276,6 +279,7 @@ export const FEATURED_TOOL_SLUGS = [
   "filters",
   "color-picker",
   "meme-generator",
+  "screenshot-beautifier",
   "img-to-pdf",
   "ocr",
   "watermark",
