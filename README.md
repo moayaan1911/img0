@@ -38,6 +38,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Live website: [img0.xyz](https://img0.xyz)
 - Home: [`/`](https://img0.xyz/)
 - Crop Image: [`/tools/crop-image`](https://img0.xyz/tools/crop-image)
+- Circular Crop: [`/tools/circular-crop`](https://img0.xyz/tools/circular-crop)
 - Image Compressor: [`/tools/image-compressor`](https://img0.xyz/tools/image-compressor)
 - Rotate & Flip: [`/tools/rotate-flip`](https://img0.xyz/tools/rotate-flip)
 - Remove Background: [`/tools/remove-background`](https://img0.xyz/tools/remove-background)
@@ -182,6 +183,17 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 
 </details>
 
+<details>
+<summary><strong>11) Circular Crop</strong> (<code>/tools/circular-crop</code>)</summary>
+
+- Upload via click or drag/drop
+- Adjustable circle radius
+- Horizontal and vertical position sliders
+- Export in `PNG`, `JPG`, and `WebP`
+- Transparent output support in `PNG` and `WebP`
+
+</details>
+
 ## Tool Status Tracker
 
 Below is the current 32-tool roadmap used on the landing page.
@@ -223,9 +235,9 @@ Below is the current 32-tool roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Shapes & Overlays (0/6 live)</strong></summary>
+<summary><strong>Shapes & Overlays (1/6 live)</strong></summary>
 
-- [ ] Circular Crop
+- [x] Circular Crop
 - [ ] Rounded Corners
 - [ ] Add Text Overlay
 - [ ] Add Shapes
@@ -271,6 +283,7 @@ app/
   robots.ts
   sitemap.ts
   tools/
+    circular-crop/page.tsx
     crop-image/page.tsx
     format-converter/page.tsx
     blur-background/page.tsx
@@ -290,6 +303,7 @@ components/
     ThemeProvider.tsx
     ThemeToggle.tsx
   tools/
+    CircularCropTool.tsx
     CropImageTool.tsx
     FormatConverterTool.tsx
     BlurBackgroundTool.tsx

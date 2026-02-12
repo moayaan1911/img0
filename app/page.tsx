@@ -119,6 +119,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Circular Crop",
         description: "Perfect circle crop with adjustable radius.",
+        route: "/tools/circular-crop",
       },
       {
         name: "Rounded Corners",
