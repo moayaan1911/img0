@@ -40,6 +40,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Format Converter",
         description: "Convert between JPEG, PNG, WebP, AVIF, BMP, and GIF.",
+        route: "/tools/format-converter",
       },
     ],
   },
