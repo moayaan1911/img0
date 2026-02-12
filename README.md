@@ -109,7 +109,7 @@ Below is the current 32-tool roadmap used on the landing page.
 <summary><strong>Core Image Manipulation (2/5 live)</strong></summary>
 
 - [x] Crop Image
-- [ ] Resize Image
+- [x] Resize Image
 - [ ] Rotate & Flip
 - [ ] Image Compressor
 - [x] Format Converter
