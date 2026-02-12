@@ -24,6 +24,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Crop Image",
         description: "Freeform crop with aspect ratio presets.",
+        route: "/tools/crop-image",
       },
       {
         name: "Resize Image",
