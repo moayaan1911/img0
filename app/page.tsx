@@ -39,6 +39,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Image Compressor",
         description: "Control output quality for JPEG, PNG, and WebP.",
+        route: "/tools/image-compressor",
       },
       {
         name: "Format Converter",

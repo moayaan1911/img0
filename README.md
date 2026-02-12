@@ -38,6 +38,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Live website: [img0.xyz](https://img0.xyz)
 - Home: [`/`](https://img0.xyz/)
 - Crop Image: [`/tools/crop-image`](https://img0.xyz/tools/crop-image)
+- Image Compressor: [`/tools/image-compressor`](https://img0.xyz/tools/image-compressor)
 - Rotate & Flip: [`/tools/rotate-flip`](https://img0.xyz/tools/rotate-flip)
 - Format Converter: [`/tools/format-converter`](https://img0.xyz/tools/format-converter)
 - QR Code Generator: [`/tools/qr-code-generator`](https://img0.xyz/tools/qr-code-generator)
@@ -93,7 +94,18 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>3) Rotate & Flip</strong> (<code>/tools/rotate-flip</code>)</summary>
+<summary><strong>3) Image Compressor</strong> (<code>/tools/image-compressor</code>)</summary>
+
+- Upload via click or drag/drop
+- Output formats: `JPG`, `WebP`, `PNG`
+- Quality slider for lossy formats
+- Resolution scale slider (`10%` to `100%`)
+- Compression result with saved-size stats
+
+</details>
+
+<details>
+<summary><strong>4) Rotate & Flip</strong> (<code>/tools/rotate-flip</code>)</summary>
 
 - Upload via click or drag/drop
 - Rotation presets: `0°`, `90°`, `180°`, `270°`
@@ -104,7 +116,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>4) QR Code Generator</strong> (<code>/tools/qr-code-generator</code>)</summary>
+<summary><strong>5) QR Code Generator</strong> (<code>/tools/qr-code-generator</code>)</summary>
 
 - Input text or URL
 - Size + margin sliders
@@ -116,7 +128,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>5) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
+<summary><strong>6) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
 
 - Upload one or multiple images
 - Reorder pages before export
@@ -127,7 +139,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>6) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
+<summary><strong>7) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
 
 - Upload PDF and extract all pages
 - Output formats: `PNG`, `JPG`, `WebP`
@@ -142,12 +154,12 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 Below is the current 32-tool roadmap used on the landing page.
 
 <details>
-<summary><strong>Core Image Manipulation (4/5 live)</strong></summary>
+<summary><strong>Core Image Manipulation (5/5 live)</strong></summary>
 
 - [x] Crop Image
 - [x] Resize Image
 - [x] Rotate & Flip
-- [ ] Image Compressor
+- [x] Image Compressor
 - [x] Format Converter
 
 </details>
@@ -227,6 +239,7 @@ app/
   tools/
     crop-image/page.tsx
     format-converter/page.tsx
+    image-compressor/page.tsx
     image-to-pdf/page.tsx
     pdf-to-image/page.tsx
     qr-code-generator/page.tsx
@@ -242,6 +255,7 @@ components/
   tools/
     CropImageTool.tsx
     FormatConverterTool.tsx
+    ImageCompressorTool.tsx
     ImageToPdfTool.tsx
     PdfToImageTool.tsx
     QRCodeGeneratorTool.tsx
