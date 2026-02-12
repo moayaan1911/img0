@@ -1,3 +1,5 @@
+"use client";
+
 import ThemeToggle from "@/components/layout/ThemeToggle";
 
 function GlobeIcon() {
@@ -75,7 +77,15 @@ function SearchIcon() {
 const linkClassName =
   "inline-flex h-8 w-8 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--text-secondary)] transition hover:bg-[var(--surface-strong)] hover:text-[var(--text-primary)]";
 
-export default function LandingHeader() {
+type LandingHeaderProps = {
+  searchValue: string;
+  onSearchChange: (value: string) => void;
+};
+
+export default function LandingHeader({
+  searchValue,
+  onSearchChange,
+}: LandingHeaderProps) {
   return (
     <header className="sticky top-3 z-20">
       <div className="rounded-xl border border-[var(--border)] bg-[color:color-mix(in_oklab,var(--background)_90%,transparent)] px-3 py-2 backdrop-blur supports-[backdrop-filter]:bg-[color:color-mix(in_oklab,var(--background)_78%,transparent)]">
@@ -96,6 +106,8 @@ export default function LandingHeader() {
                 <input
                   id="landing-tool-search"
                   type="text"
+                  value={searchValue}
+                  onChange={(event) => onSearchChange(event.target.value)}
                   placeholder="Search tools..."
                   className="h-8 w-full rounded-lg border border-[var(--border)] bg-[var(--background)] pl-8 pr-3 text-sm text-[var(--text-primary)] outline-none placeholder:text-[var(--text-secondary)]"
                 />
