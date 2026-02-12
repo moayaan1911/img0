@@ -85,10 +85,12 @@ export const metadata: Metadata = {
   },
   other: {
     monetag: "8786e6b39066648d92329bcc8686a315",
+    "og:image": OG_IMAGE_URL,
     "geo.region": "GLOBAL",
     "geo.placename": "Worldwide",
     "geo.position": "0;0",
     ICBM: "0, 0",
+    "twitter:image": OG_IMAGE_URL,
     "og:image:url": OG_IMAGE_URL,
     "og:image:secure_url": OG_IMAGE_URL,
     "twitter:image:src": OG_IMAGE_URL,
