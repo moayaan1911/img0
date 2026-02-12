@@ -137,6 +137,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="210522"
+          async
+          data-cfasync="false"
+        ></script>
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
