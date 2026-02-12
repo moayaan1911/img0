@@ -48,6 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/tools/change-background-color`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/tools/rotate-flip`,
       lastModified: now,
       changeFrequency: "weekly",

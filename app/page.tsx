@@ -59,6 +59,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Change Background Color",
         description: "Replace transparent areas with solid colors.",
+        route: "/tools/change-background-color",
       },
       {
         name: "Blur Background",
