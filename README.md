@@ -40,6 +40,8 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Crop Image: [`/tools/crop-image`](https://img0.xyz/tools/crop-image)
 - Format Converter: [`/tools/format-converter`](https://img0.xyz/tools/format-converter)
 - QR Code Generator: [`/tools/qr-code-generator`](https://img0.xyz/tools/qr-code-generator)
+- Image to PDF: [`/tools/image-to-pdf`](https://img0.xyz/tools/image-to-pdf)
+- PDF to Image: [`/tools/pdf-to-image`](https://img0.xyz/tools/pdf-to-image)
 - Contributing guide: [`CONTRIBUTION.md`](./CONTRIBUTION.md)
 
 ## Table of Contents
@@ -101,6 +103,28 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 
 </details>
 
+<details>
+<summary><strong>4) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
+
+- Upload one or multiple images
+- Reorder pages before export
+- Auto fit inside page (no crop)
+- Fixed A4 output
+- Right-side PDF preview + download
+
+</details>
+
+<details>
+<summary><strong>5) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
+
+- Upload PDF and extract all pages
+- Output formats: `PNG`, `JPG`, `WebP`
+- Quality slider for lossy formats
+- Render scale control for resolution
+- Per-page download + download all
+
+</details>
+
 ## Tool Status Tracker
 
 Below is the current 32-tool roadmap used on the landing page.
@@ -154,10 +178,10 @@ Below is the current 32-tool roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Advanced Tools (1/8 live)</strong></summary>
+<summary><strong>Advanced Tools (3/8 live)</strong></summary>
 
-- [ ] Image to PDF
-- [ ] PDF to Image
+- [x] Image to PDF
+- [x] PDF to Image
 - [ ] Batch Processing
 - [ ] Image Comparison Slider
 - [x] QR Code Generator
@@ -175,6 +199,8 @@ Below is the current 32-tool roadmap used on the landing page.
 - Tailwind CSS v4
 - `next-themes`
 - `qrcode`
+- `jspdf`
+- `pdfjs-dist`
 - Pure browser-side image processing (Canvas APIs)
 
 ## Project Structure
@@ -189,6 +215,8 @@ app/
   tools/
     crop-image/page.tsx
     format-converter/page.tsx
+    image-to-pdf/page.tsx
+    pdf-to-image/page.tsx
     qr-code-generator/page.tsx
 
 components/
@@ -201,6 +229,8 @@ components/
   tools/
     CropImageTool.tsx
     FormatConverterTool.tsx
+    ImageToPdfTool.tsx
+    PdfToImageTool.tsx
     QRCodeGeneratorTool.tsx
 ```
 

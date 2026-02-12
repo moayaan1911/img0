@@ -143,10 +143,12 @@ const toolSections: ToolSection[] = [
       {
         name: "Image to PDF",
         description: "Export single or multiple images into PDF.",
+        route: "/tools/image-to-pdf",
       },
       {
         name: "PDF to Image",
         description: "Extract image pages from PDF files.",
+        route: "/tools/pdf-to-image",
       },
       {
         name: "Batch Processing",
