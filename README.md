@@ -40,6 +40,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Crop Image: [`/tools/crop-image`](https://img0.xyz/tools/crop-image)
 - Image Compressor: [`/tools/image-compressor`](https://img0.xyz/tools/image-compressor)
 - Rotate & Flip: [`/tools/rotate-flip`](https://img0.xyz/tools/rotate-flip)
+- Remove Background: [`/tools/remove-background`](https://img0.xyz/tools/remove-background)
 - Format Converter: [`/tools/format-converter`](https://img0.xyz/tools/format-converter)
 - QR Code Generator: [`/tools/qr-code-generator`](https://img0.xyz/tools/qr-code-generator)
 - Image to PDF: [`/tools/image-to-pdf`](https://img0.xyz/tools/image-to-pdf)
@@ -128,7 +129,17 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>6) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
+<summary><strong>6) Remove Background</strong> (<code>/tools/remove-background</code>)</summary>
+
+- Upload image and run AI-based background removal
+- Runs fully in browser (no backend uploads)
+- Transparent result preview with checkerboard
+- Download transparent output as `PNG`
+
+</details>
+
+<details>
+<summary><strong>7) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
 
 - Upload one or multiple images
 - Reorder pages before export
@@ -139,7 +150,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>7) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
+<summary><strong>8) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
 
 - Upload PDF and extract all pages
 - Output formats: `PNG`, `JPG`, `WebP`
@@ -165,9 +176,9 @@ Below is the current 32-tool roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Background Tools (0/4 live)</strong></summary>
+<summary><strong>Background Tools (1/4 live)</strong></summary>
 
-- [ ] Remove Background
+- [x] Remove Background
 - [ ] Change Background Color
 - [ ] Blur Background
 - [ ] Replace Background
@@ -222,6 +233,7 @@ Below is the current 32-tool roadmap used on the landing page.
 - TypeScript
 - Tailwind CSS v4
 - `next-themes`
+- `@imgly/background-removal`
 - `qrcode`
 - `jspdf`
 - `pdfjs-dist`
@@ -243,6 +255,7 @@ app/
     image-to-pdf/page.tsx
     pdf-to-image/page.tsx
     qr-code-generator/page.tsx
+    remove-background/page.tsx
     rotate-flip/page.tsx
 
 components/
@@ -259,6 +272,7 @@ components/
     ImageToPdfTool.tsx
     PdfToImageTool.tsx
     QRCodeGeneratorTool.tsx
+    RemoveBackgroundTool.tsx
     RotateFlipTool.tsx
 ```
 

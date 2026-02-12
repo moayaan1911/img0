@@ -54,6 +54,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Remove Background",
         description: "AI-powered background removal in the browser.",
+        route: "/tools/remove-background",
       },
       {
         name: "Change Background Color",
