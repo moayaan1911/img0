@@ -4,6 +4,7 @@ import LandingPageClient from "@/components/layout/LandingPageClient";
 type ToolItem = {
   name: string;
   description: string;
+  route?: string;
 };
 
 type ToolSection = {
@@ -155,6 +156,7 @@ const toolSections: ToolSection[] = [
       {
         name: "QR Code Generator",
         description: "Generate QR codes from text or links.",
+        route: "/tools/qr-code-generator",
       },
       {
         name: "Barcode Reader",
