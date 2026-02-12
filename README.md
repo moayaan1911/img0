@@ -346,7 +346,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 
 ## Tool Status Tracker
 
-Below is the current 32-tool roadmap used on the landing page.
+Below is the current roadmap used on the landing page.
 
 <details>
 <summary><strong>Core Image Manipulation (5/5 live)</strong></summary>
@@ -397,12 +397,10 @@ Below is the current 32-tool roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Advanced Tools (3/8 live)</strong></summary>
+<summary><strong>Advanced Tools (3/6 live)</strong></summary>
 
 - [x] Image to PDF
 - [x] PDF to Image
-- [ ] Batch Processing
-- [ ] Image Comparison Slider
 - [x] QR Code Generator
 - [ ] Barcode Reader
 - [ ] Histogram View

@@ -171,14 +171,6 @@ const toolSections: ToolSection[] = [
         route: "/tools/pdf-to-image",
       },
       {
-        name: "Batch Processing",
-        description: "Apply the same operation to multiple images at once.",
-      },
-      {
-        name: "Image Comparison Slider",
-        description: "Before and after comparison with an interactive slider.",
-      },
-      {
         name: "QR Code Generator",
         description: "Generate QR codes from text or links.",
         route: "/tools/qr-code-generator",
