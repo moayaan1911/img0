@@ -41,6 +41,9 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Circular Crop: [`/tools/circular-crop`](https://img0.xyz/tools/circular-crop)
 - Rounded Corners: [`/tools/rounded-corners`](https://img0.xyz/tools/rounded-corners)
 - Add Text Overlay: [`/tools/add-text-overlay`](https://img0.xyz/tools/add-text-overlay)
+- Add Watermark: [`/tools/add-watermark`](https://img0.xyz/tools/add-watermark)
+- Meme Generator: [`/tools/meme-generator`](https://img0.xyz/tools/meme-generator)
+- Remove Watermark: [`/tools/remove-watermark`](https://img0.xyz/tools/remove-watermark)
 - Image Compressor: [`/tools/image-compressor`](https://img0.xyz/tools/image-compressor)
 - Rotate & Flip: [`/tools/rotate-flip`](https://img0.xyz/tools/rotate-flip)
 - Remove Background: [`/tools/remove-background`](https://img0.xyz/tools/remove-background)
@@ -218,6 +221,39 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 
 </details>
 
+<details>
+<summary><strong>14) Add Watermark</strong> (<code>/tools/add-watermark</code>)</summary>
+
+- Add watermark as text or logo image
+- Position presets with margin and X/Y offset
+- Opacity and rotation controls
+- Text styling: font family, weight, size, color, shadow
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>15) Meme Generator</strong> (<code>/tools/meme-generator</code>)</summary>
+
+- Top and bottom meme caption inputs
+- Classic meme text styling with stroke + shadow
+- Font family, size, weight, line-height, and margin controls
+- Independent top/bottom Y offset sliders
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>16) Remove Watermark</strong> (<code>/tools/remove-watermark</code>)</summary>
+
+- Drag-select target area on image
+- Fine control for area X/Y/width/height
+- Patch source direction: auto, above, below, left, right
+- Feather blur and multi-pass blending
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
 ## Tool Status Tracker
 
 Below is the current 32-tool roadmap used on the landing page.
@@ -259,14 +295,14 @@ Below is the current 32-tool roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Shapes & Overlays (3/6 live)</strong></summary>
+<summary><strong>Shapes & Overlays (6/6 live)</strong></summary>
 
 - [x] Circular Crop
 - [x] Rounded Corners
 - [x] Add Text Overlay
-- [ ] Add Shapes
-- [ ] Add Watermark
-- [ ] Meme Generator
+- [x] Remove Watermark
+- [x] Add Watermark
+- [x] Meme Generator
 
 </details>
 
@@ -307,8 +343,11 @@ app/
   robots.ts
   sitemap.ts
   tools/
+    add-watermark/page.tsx
     add-text-overlay/page.tsx
     circular-crop/page.tsx
+    meme-generator/page.tsx
+    remove-watermark/page.tsx
     rounded-corners/page.tsx
     crop-image/page.tsx
     format-converter/page.tsx
@@ -329,8 +368,11 @@ components/
     ThemeProvider.tsx
     ThemeToggle.tsx
   tools/
+    AddWatermarkTool.tsx
     AddTextOverlayTool.tsx
     CircularCropTool.tsx
+    MemeGeneratorTool.tsx
+    RemoveWatermarkTool.tsx
     RoundedCornersTool.tsx
     CropImageTool.tsx
     FormatConverterTool.tsx

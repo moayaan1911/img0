@@ -132,16 +132,19 @@ const toolSections: ToolSection[] = [
         route: "/tools/add-text-overlay",
       },
       {
-        name: "Add Shapes",
-        description: "Overlay rectangles, circles, arrows, and lines.",
+        name: "Remove Watermark",
+        description: "Clean watermark areas using patch and blend controls.",
+        route: "/tools/remove-watermark",
       },
       {
         name: "Add Watermark",
         description: "Add text or logo watermark with opacity control.",
+        route: "/tools/add-watermark",
       },
       {
         name: "Meme Generator",
         description: "Create memes with top and bottom caption styles.",
+        route: "/tools/meme-generator",
       },
     ],
   },
