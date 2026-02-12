@@ -64,6 +64,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Blur Background",
         description: "Selective portrait background blur effect.",
+        route: "/tools/blur-background",
       },
       {
         name: "Replace Background",

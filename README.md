@@ -42,6 +42,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Rotate & Flip: [`/tools/rotate-flip`](https://img0.xyz/tools/rotate-flip)
 - Remove Background: [`/tools/remove-background`](https://img0.xyz/tools/remove-background)
 - Change Background Color: [`/tools/change-background-color`](https://img0.xyz/tools/change-background-color)
+- Blur Background: [`/tools/blur-background`](https://img0.xyz/tools/blur-background)
 - Format Converter: [`/tools/format-converter`](https://img0.xyz/tools/format-converter)
 - QR Code Generator: [`/tools/qr-code-generator`](https://img0.xyz/tools/qr-code-generator)
 - Image to PDF: [`/tools/image-to-pdf`](https://img0.xyz/tools/image-to-pdf)
@@ -150,7 +151,17 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>8) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
+<summary><strong>8) Blur Background</strong> (<code>/tools/blur-background</code>)</summary>
+
+- Keeps subject sharp while blurring background
+- Adjustable blur strength slider
+- Preview includes original, cutout, and final output
+- Export in `JPG`, `PNG`, or `WebP`
+
+</details>
+
+<details>
+<summary><strong>9) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
 
 - Upload one or multiple images
 - Reorder pages before export
@@ -161,7 +172,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>9) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
+<summary><strong>10) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
 
 - Upload PDF and extract all pages
 - Output formats: `PNG`, `JPG`, `WebP`
@@ -187,11 +198,11 @@ Below is the current 32-tool roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Background Tools (2/4 live)</strong></summary>
+<summary><strong>Background Tools (3/4 live)</strong></summary>
 
 - [x] Remove Background
 - [x] Change Background Color
-- [ ] Blur Background
+- [x] Blur Background
 - [ ] Replace Background
 
 </details>
@@ -262,6 +273,7 @@ app/
   tools/
     crop-image/page.tsx
     format-converter/page.tsx
+    blur-background/page.tsx
     change-background-color/page.tsx
     image-compressor/page.tsx
     image-to-pdf/page.tsx
@@ -280,6 +292,7 @@ components/
   tools/
     CropImageTool.tsx
     FormatConverterTool.tsx
+    BlurBackgroundTool.tsx
     ChangeBackgroundColorTool.tsx
     ImageCompressorTool.tsx
     ImageToPdfTool.tsx
