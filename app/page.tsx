@@ -124,6 +124,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Rounded Corners",
         description: "Apply smooth rounded corners with radius control.",
+        route: "/tools/rounded-corners",
       },
       {
         name: "Add Text Overlay",
