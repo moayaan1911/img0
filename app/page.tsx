@@ -78,38 +78,47 @@ const toolSections: ToolSection[] = [
       {
         name: "Adjust Brightness",
         description: "Fine-tune overall image brightness.",
+        route: "/tools/adjust-brightness",
       },
       {
         name: "Adjust Contrast",
         description: "Increase or reduce contrast with a slider.",
+        route: "/tools/adjust-contrast",
       },
       {
         name: "Adjust Saturation",
         description: "Control color intensity for vivid or muted output.",
+        route: "/tools/adjust-saturation",
       },
       {
         name: "Hue Shifter",
         description: "Shift global color tone with hue control.",
+        route: "/tools/hue-shifter",
       },
       {
         name: "Grayscale Converter",
         description: "Convert color images to black and white instantly.",
+        route: "/tools/grayscale-converter",
       },
       {
         name: "Sepia Filter",
         description: "Apply a classic warm vintage look.",
+        route: "/tools/sepia-filter",
       },
       {
         name: "Invert Colors",
         description: "Create negative-style image outputs.",
+        route: "/tools/invert-colors",
       },
       {
         name: "Color Replacement",
         description: "Select one color and replace it with another.",
+        route: "/tools/color-replacement",
       },
       {
         name: "Auto Enhance",
         description: "One-click improvements for tone and clarity.",
+        route: "/tools/auto-enhance",
       },
     ],
   },

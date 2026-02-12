@@ -44,6 +44,15 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Add Watermark: [`/tools/add-watermark`](https://img0.xyz/tools/add-watermark)
 - Meme Generator: [`/tools/meme-generator`](https://img0.xyz/tools/meme-generator)
 - Remove Watermark: [`/tools/remove-watermark`](https://img0.xyz/tools/remove-watermark)
+- Adjust Brightness: [`/tools/adjust-brightness`](https://img0.xyz/tools/adjust-brightness)
+- Adjust Contrast: [`/tools/adjust-contrast`](https://img0.xyz/tools/adjust-contrast)
+- Adjust Saturation: [`/tools/adjust-saturation`](https://img0.xyz/tools/adjust-saturation)
+- Hue Shifter: [`/tools/hue-shifter`](https://img0.xyz/tools/hue-shifter)
+- Grayscale Converter: [`/tools/grayscale-converter`](https://img0.xyz/tools/grayscale-converter)
+- Sepia Filter: [`/tools/sepia-filter`](https://img0.xyz/tools/sepia-filter)
+- Invert Colors: [`/tools/invert-colors`](https://img0.xyz/tools/invert-colors)
+- Color Replacement: [`/tools/color-replacement`](https://img0.xyz/tools/color-replacement)
+- Auto Enhance: [`/tools/auto-enhance`](https://img0.xyz/tools/auto-enhance)
 - Image Compressor: [`/tools/image-compressor`](https://img0.xyz/tools/image-compressor)
 - Rotate & Flip: [`/tools/rotate-flip`](https://img0.xyz/tools/rotate-flip)
 - Remove Background: [`/tools/remove-background`](https://img0.xyz/tools/remove-background)
@@ -254,6 +263,87 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 
 </details>
 
+<details>
+<summary><strong>17) Adjust Brightness</strong> (<code>/tools/adjust-brightness</code>)</summary>
+
+- Brightness slider from `-100` to `+100`
+- Real-time output generation on apply
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>18) Adjust Contrast</strong> (<code>/tools/adjust-contrast</code>)</summary>
+
+- Contrast slider from `-100` to `+100`
+- Original vs filtered preview
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>19) Adjust Saturation</strong> (<code>/tools/adjust-saturation</code>)</summary>
+
+- Saturation slider from `-100` to `+100`
+- Quickly mute or boost image colors
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>20) Hue Shifter</strong> (<code>/tools/hue-shifter</code>)</summary>
+
+- Hue rotation slider from `-180°` to `+180°`
+- Fast global color-tone shift
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>21) Grayscale Converter</strong> (<code>/tools/grayscale-converter</code>)</summary>
+
+- One-click black-and-white conversion
+- Clean side-by-side preview
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>22) Sepia Filter</strong> (<code>/tools/sepia-filter</code>)</summary>
+
+- Instant warm vintage sepia effect
+- Side-by-side preview
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>23) Invert Colors</strong> (<code>/tools/invert-colors</code>)</summary>
+
+- One-click color inversion
+- Negative-style visual output
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>24) Color Replacement</strong> (<code>/tools/color-replacement</code>)</summary>
+
+- Pick source color and destination color
+- Tolerance + softness controls
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
+<details>
+<summary><strong>25) Auto Enhance</strong> (<code>/tools/auto-enhance</code>)</summary>
+
+- One-click enhancement pipeline
+- Adjustable enhance strength slider
+- Balanced brightness/contrast/saturation boost
+
+</details>
+
 ## Tool Status Tracker
 
 Below is the current 32-tool roadmap used on the landing page.
@@ -280,17 +370,17 @@ Below is the current 32-tool roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Color & Filters (0/9 live)</strong></summary>
+<summary><strong>Color & Filters (9/9 live)</strong></summary>
 
-- [ ] Adjust Brightness
-- [ ] Adjust Contrast
-- [ ] Adjust Saturation
-- [ ] Hue Shifter
-- [ ] Grayscale Converter
-- [ ] Sepia Filter
-- [ ] Invert Colors
-- [ ] Color Replacement
-- [ ] Auto Enhance
+- [x] Adjust Brightness
+- [x] Adjust Contrast
+- [x] Adjust Saturation
+- [x] Hue Shifter
+- [x] Grayscale Converter
+- [x] Sepia Filter
+- [x] Invert Colors
+- [x] Color Replacement
+- [x] Auto Enhance
 
 </details>
 
@@ -343,6 +433,15 @@ app/
   robots.ts
   sitemap.ts
   tools/
+    adjust-brightness/page.tsx
+    adjust-contrast/page.tsx
+    adjust-saturation/page.tsx
+    auto-enhance/page.tsx
+    color-replacement/page.tsx
+    grayscale-converter/page.tsx
+    hue-shifter/page.tsx
+    invert-colors/page.tsx
+    sepia-filter/page.tsx
     add-watermark/page.tsx
     add-text-overlay/page.tsx
     circular-crop/page.tsx
@@ -368,6 +467,7 @@ components/
     ThemeProvider.tsx
     ThemeToggle.tsx
   tools/
+    ColorFilterTool.tsx
     AddWatermarkTool.tsx
     AddTextOverlayTool.tsx
     CircularCropTool.tsx
