@@ -58,6 +58,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Remove Background: [`/tools/remove-background`](https://img0.xyz/tools/remove-background)
 - Change Background Color: [`/tools/change-background-color`](https://img0.xyz/tools/change-background-color)
 - Blur Background: [`/tools/blur-background`](https://img0.xyz/tools/blur-background)
+- Replace Background: [`/tools/replace-background`](https://img0.xyz/tools/replace-background)
 - Format Converter: [`/tools/format-converter`](https://img0.xyz/tools/format-converter)
 - QR Code Generator: [`/tools/qr-code-generator`](https://img0.xyz/tools/qr-code-generator)
 - Image to PDF: [`/tools/image-to-pdf`](https://img0.xyz/tools/image-to-pdf)
@@ -344,6 +345,17 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 
 </details>
 
+<details>
+<summary><strong>26) Replace Background</strong> (<code>/tools/replace-background</code>)</summary>
+
+- Upload source image and new background image
+- Keeps subject in front using in-browser cutout
+- Background fit modes: `cover`, `contain`, `stretch`
+- Background scale and X/Y position controls
+- Export in `JPG`, `PNG`, or `WebP`
+
+</details>
+
 ## Tool Status Tracker
 
 Below is the current roadmap used on the landing page.
@@ -360,12 +372,12 @@ Below is the current roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Background Tools (3/4 live)</strong></summary>
+<summary><strong>Background Tools (4/4 live)</strong></summary>
 
 - [x] Remove Background
 - [x] Change Background Color
 - [x] Blur Background
-- [ ] Replace Background
+- [x] Replace Background
 
 </details>
 
@@ -449,6 +461,7 @@ app/
     crop-image/page.tsx
     format-converter/page.tsx
     blur-background/page.tsx
+    replace-background/page.tsx
     change-background-color/page.tsx
     image-compressor/page.tsx
     image-to-pdf/page.tsx
@@ -475,6 +488,7 @@ components/
     CropImageTool.tsx
     FormatConverterTool.tsx
     BlurBackgroundTool.tsx
+    ReplaceBackgroundTool.tsx
     ChangeBackgroundColorTool.tsx
     ImageCompressorTool.tsx
     ImageToPdfTool.tsx

@@ -69,6 +69,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Replace Background",
         description: "Swap the background with another image.",
+        route: "/tools/replace-background",
       },
     ],
   },
