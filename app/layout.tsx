@@ -84,6 +84,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE_URL],
   },
   other: {
+    monetag: "8786e6b39066648d92329bcc8686a315",
     "geo.region": "GLOBAL",
     "geo.placename": "Worldwide",
     "geo.position": "0;0",
