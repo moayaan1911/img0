@@ -29,6 +29,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Resize Image",
         description: "Resize by width and height with aspect lock.",
+        route: "/tools/resize-image",
       },
       {
         name: "Rotate & Flip",
