@@ -1,123 +1,121 @@
 # Contributing to img0.xyz
 
-Thanks for helping build img0.xyz.
+Thanks for contributing.
 
-This project is a non-profit, open-source browser image toolkit. The goal is to keep tools fast, practical, and privacy-friendly.
+img0.xyz is a privacy-first image toolkit where processing should stay in the browser and UX should stay minimal, fast, and reliable.
 
-## Before You Start
-
-- Read the project direction in `AGENTS.md`
-- Review existing tools in `src/lib/tools-registry.ts`
-- Search for existing issues/PRs before opening a new one
-
-## What You Can Contribute
-
-- New tools
-- Bug fixes
-- Performance improvements
-- Accessibility improvements
-- UI/UX improvements
-- Documentation updates
-
-## Local Setup
+## Quick Start
 
 ```bash
 npm install
 npm run lint
 npm run build
-```
-
-Optional local run:
-
-```bash
 npm run dev
 ```
 
-## Development Rules
+App URL: `http://localhost:3000`
 
-- TypeScript strict mode
-- Reuse shared components where possible
-- Keep logic modular and readable
-- Add clear error states for invalid files and processing failures
-- Keep UI responsive on mobile and desktop
+## Current Project Layout
 
-## Product Constraints
+```text
+app/
+  page.tsx
+  layout.tsx
+  globals.css
+  sitemap.ts
+  robots.ts
+  tools/
+    crop-image/page.tsx
+    format-converter/page.tsx
+    qr-code-generator/page.tsx
 
-- No paid dependencies/APIs
-- No auth/login/signup systems
-- No user image uploads to external processing backends
-- No tracking-heavy analytics
+components/
+  layout/
+    LandingHeader.tsx
+    LandingFooter.tsx
+    LandingPageClient.tsx
+    ThemeProvider.tsx
+    ThemeToggle.tsx
+  tools/
+    CropImageTool.tsx
+    FormatConverterTool.tsx
+    QRCodeGeneratorTool.tsx
+```
 
-## How to Add a New Tool
+## What You Can Contribute
 
-1. Add tool metadata in `src/lib/tools-registry.ts`:
-   - `slug`
-   - `name`
-   - `description`
-   - `category`
-   - `phase`
-2. Create a route:
-   - `app/tools/<tool-slug>/page.tsx`
-3. Create the tool component under:
-   - `src/components/tools/phaseX/`
-4. Use shared building blocks where possible:
-   - `ImageUploader`
-   - `ImagePreview`
-   - `DownloadButton`
-   - `ProcessingLoader`
-5. Add metadata (`title`, `description`) for SEO
-6. Validate:
-   - `npm run lint`
-   - `npm run build`
+- New image tools from the roadmap
+- Bug fixes
+- Performance improvements
+- Accessibility improvements
+- Mobile UX polish
+- Documentation improvements
 
-## Pull Request Checklist
+## Non-Negotiables
 
-- [ ] Feature works as expected
-- [ ] No console/runtime errors
-- [ ] Proper empty/loading/error states
-- [ ] Mobile-friendly layout
-- [ ] Accessibility basics covered (labels, keyboard flow, readable contrast)
+- Keep processing client-side
+- No auth/signup/paywall features
+- No paid dependency lock-in
+- No third-party image upload requirement
+- No tracking-heavy integrations
+
+## Tool Development Workflow
+
+1. Create a new tool component in `components/tools/`  
+   Example: `components/tools/ResizeImageTool.tsx`
+2. Add a route page in `app/tools/<tool-slug>/page.tsx`
+3. Add tool card metadata in `app/page.tsx` under `toolSections`
+4. Add sitemap entry in `app/sitemap.ts`
+5. Add page metadata (`title`, `description`) in the tool route
+6. Update docs (`README.md`, this file) when behavior changes
+
+## Tool UI Contract
+
+For consistency, match existing tool pages:
+
+- Header with tool label + `Back to Home` button
+- Intro hero block with title + one-line description
+- Main tool area (usually two columns on desktop)
+- Clear empty/loading/error states
+- Preview + download flow always visible after processing
+- `cursor-pointer` on clickable controls
+
+## Code Quality Expectations
+
+- TypeScript-first, readable naming
+- Keep components modular and focused
+- Validate input files and unsupported states
+- Show clear errors instead of silent failures
+- Keep output naming predictable
+
+## PR Checklist
+
+- [ ] Feature works in light and dark mode
+- [ ] Works on mobile (at least ~375px width)
+- [ ] No runtime console errors
 - [ ] `npm run lint` passes
 - [ ] `npm run build` passes
-- [ ] README/docs updated if needed
+- [ ] Docs updated (if user-facing behavior changed)
 
-## Tool Quality Expectations
+## Bug Report Template
 
-- Input validation for file type and size
-- No data loss on failure
-- Clear user feedback for unsupported browser capabilities
-- Predictable output naming
-- Download flow always visible and usable
+When reporting bugs, include:
 
-## Reporting Bugs
-
-When opening an issue, include:
-
-- Tool name and route
-- Browser and OS
+- Tool name + route
+- Browser + OS
 - Steps to reproduce
-- Expected result
-- Actual result
-- Screenshots or short recording (if possible)
+- Expected vs actual behavior
+- Screenshot or short recording
 
-## Feature Requests
+## Feature Request Template
 
-When suggesting a tool:
+When requesting a tool, include:
 
-- Explain the problem/use-case
-- Mention expected input/output formats
-- Mention whether it is single-file or batch
-- Mention likely browser-side approach/library if known
+- Problem/use-case
+- Input and output format expectations
+- Single-file or batch usage
+- Browser-side implementation idea (if known)
 
-## Code Style
+## Repository
 
-- Keep changes scoped and focused
-- Avoid unrelated refactors in the same PR
-- Prefer explicit, descriptive naming
-- Avoid introducing heavy dependencies unless necessary
-
-## Questions
-
-Open an issue or start a discussion in the repository:
-
-- [GitHub Repo](https://github.com/moayaan1911/img0)
+- GitHub: [https://github.com/moayaan1911/img0](https://github.com/moayaan1911/img0)
