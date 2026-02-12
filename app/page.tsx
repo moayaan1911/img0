@@ -34,6 +34,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Rotate & Flip",
         description: "Rotate 90, 180, 270 and flip horizontally or vertically.",
+        route: "/tools/rotate-flip",
       },
       {
         name: "Image Compressor",

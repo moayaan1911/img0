@@ -38,6 +38,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Live website: [img0.xyz](https://img0.xyz)
 - Home: [`/`](https://img0.xyz/)
 - Crop Image: [`/tools/crop-image`](https://img0.xyz/tools/crop-image)
+- Rotate & Flip: [`/tools/rotate-flip`](https://img0.xyz/tools/rotate-flip)
 - Format Converter: [`/tools/format-converter`](https://img0.xyz/tools/format-converter)
 - QR Code Generator: [`/tools/qr-code-generator`](https://img0.xyz/tools/qr-code-generator)
 - Image to PDF: [`/tools/image-to-pdf`](https://img0.xyz/tools/image-to-pdf)
@@ -92,7 +93,18 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>3) QR Code Generator</strong> (<code>/tools/qr-code-generator</code>)</summary>
+<summary><strong>3) Rotate & Flip</strong> (<code>/tools/rotate-flip</code>)</summary>
+
+- Upload via click or drag/drop
+- Rotation presets: `0°`, `90°`, `180°`, `270°`
+- Flip options: `Horizontal`, `Vertical`
+- Live preview before export
+- Export formats: `PNG`, `JPG`, `WebP`
+
+</details>
+
+<details>
+<summary><strong>4) QR Code Generator</strong> (<code>/tools/qr-code-generator</code>)</summary>
 
 - Input text or URL
 - Size + margin sliders
@@ -104,7 +116,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>4) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
+<summary><strong>5) Image to PDF</strong> (<code>/tools/image-to-pdf</code>)</summary>
 
 - Upload one or multiple images
 - Reorder pages before export
@@ -115,7 +127,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 </details>
 
 <details>
-<summary><strong>5) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
+<summary><strong>6) PDF to Image</strong> (<code>/tools/pdf-to-image</code>)</summary>
 
 - Upload PDF and extract all pages
 - Output formats: `PNG`, `JPG`, `WebP`
@@ -130,11 +142,11 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 Below is the current 32-tool roadmap used on the landing page.
 
 <details>
-<summary><strong>Core Image Manipulation (2/5 live)</strong></summary>
+<summary><strong>Core Image Manipulation (4/5 live)</strong></summary>
 
 - [x] Crop Image
 - [x] Resize Image
-- [ ] Rotate & Flip
+- [x] Rotate & Flip
 - [ ] Image Compressor
 - [x] Format Converter
 
@@ -218,6 +230,7 @@ app/
     image-to-pdf/page.tsx
     pdf-to-image/page.tsx
     qr-code-generator/page.tsx
+    rotate-flip/page.tsx
 
 components/
   layout/
@@ -232,6 +245,7 @@ components/
     ImageToPdfTool.tsx
     PdfToImageTool.tsx
     QRCodeGeneratorTool.tsx
+    RotateFlipTool.tsx
 ```
 
 ## Local Setup
