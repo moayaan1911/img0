@@ -40,6 +40,7 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 - Crop Image: [`/tools/crop-image`](https://img0.xyz/tools/crop-image)
 - Circular Crop: [`/tools/circular-crop`](https://img0.xyz/tools/circular-crop)
 - Rounded Corners: [`/tools/rounded-corners`](https://img0.xyz/tools/rounded-corners)
+- Add Text Overlay: [`/tools/add-text-overlay`](https://img0.xyz/tools/add-text-overlay)
 - Image Compressor: [`/tools/image-compressor`](https://img0.xyz/tools/image-compressor)
 - Rotate & Flip: [`/tools/rotate-flip`](https://img0.xyz/tools/rotate-flip)
 - Remove Background: [`/tools/remove-background`](https://img0.xyz/tools/remove-background)
@@ -206,6 +207,17 @@ img0.xyz is a privacy-first image toolkit focused on fast, clean, browser-based 
 
 </details>
 
+<details>
+<summary><strong>13) Add Text Overlay</strong> (<code>/tools/add-text-overlay</code>)</summary>
+
+- Multi-line text input with auto-wrap support
+- Font family, weight, size, and line-height controls
+- Text color, opacity, and full shadow controls
+- Horizontal + vertical alignment with X/Y offset sliders
+- Export in `PNG`, `JPG`, and `WebP`
+
+</details>
+
 ## Tool Status Tracker
 
 Below is the current 32-tool roadmap used on the landing page.
@@ -247,11 +259,11 @@ Below is the current 32-tool roadmap used on the landing page.
 </details>
 
 <details>
-<summary><strong>Shapes & Overlays (2/6 live)</strong></summary>
+<summary><strong>Shapes & Overlays (3/6 live)</strong></summary>
 
 - [x] Circular Crop
 - [x] Rounded Corners
-- [ ] Add Text Overlay
+- [x] Add Text Overlay
 - [ ] Add Shapes
 - [ ] Add Watermark
 - [ ] Meme Generator
@@ -295,6 +307,7 @@ app/
   robots.ts
   sitemap.ts
   tools/
+    add-text-overlay/page.tsx
     circular-crop/page.tsx
     rounded-corners/page.tsx
     crop-image/page.tsx
@@ -316,6 +329,7 @@ components/
     ThemeProvider.tsx
     ThemeToggle.tsx
   tools/
+    AddTextOverlayTool.tsx
     CircularCropTool.tsx
     RoundedCornersTool.tsx
     CropImageTool.tsx

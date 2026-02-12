@@ -129,6 +129,7 @@ const toolSections: ToolSection[] = [
       {
         name: "Add Text Overlay",
         description: "Place custom text with font, size, and styling options.",
+        route: "/tools/add-text-overlay",
       },
       {
         name: "Add Shapes",
